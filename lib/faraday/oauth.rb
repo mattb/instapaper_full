@@ -1,3 +1,5 @@
+# from https://github.com/jnunemaker/twitter/blob/master/lib/faraday/oauth.rb
+      
 require 'faraday'
 require 'simple_oauth'
 
