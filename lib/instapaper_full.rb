@@ -46,6 +46,9 @@ module InstapaperFull
         if data.has_key? 'oauth_token_secret'
           @options[:oauth_token] = data['oauth_token'][0]
           @options[:oauth_token_secret] = data['oauth_token_secret'][0]
+          verify_credentials.each { |k,v|
+            @options[k.to_sym] = v if k != 'type'
+          }
         end
         return true
       else
@@ -60,17 +63,69 @@ module InstapaperFull
         end
       end
       if result.status == 200
-        return result.body[0]
+        return result.body
       end
       return nil
     end
 
     def verify_credentials
-      call('account/verify_credentials')
+      call('account/verify_credentials')[0]
     end
 
     def bookmarks_list(options=nil)
-      call('bookmarks/list', options)
+      call('bookmarks/list', options)[2..-1] # slice off the 'meta' and 'user' from the front of the array
+    end
+
+    def bookmarks_update_read_progress(options=nil)
+      call('bookmarks/update_read_progress', options)
+    end
+
+    def bookmarks_add(options=nil)
+      call('bookmarks/add')
+    end
+
+    def bookmarks_delete(options=nil)
+      call('bookmarks/delete', options)
+    end
+
+    def bookmarks_star(options=nil)
+      call('bookmarks/star', options)
+    end
+
+    def bookmarks_unstar(options=nil)
+      call('bookmarks/unstar', options)
+    end
+
+    def bookmarks_archive(options=nil)
+      call('bookmarks/archive', options)
+    end
+
+    def bookmarks_unarchive(options=nil)
+      call('bookmarks/unarchive', options)
+    end
+
+    def bookmarks_move(options=nil)
+      call('bookmarks/move', options)
+    end
+
+    def bookmarks_get_text(options=nil)
+      call('bookmarks/get_text', options)
+    end
+
+    def folders_list
+      call('folders/list')
+    end
+
+    def folders_add(options=nil)
+      call('folders/add', options)
+    end
+
+    def folders_delete(options=nil)
+      call('folders/delete', options)
+    end
+
+    def folders_set_order(options=nil)
+      call('folders/set_order', options)
     end
   end
 end
