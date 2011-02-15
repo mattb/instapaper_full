@@ -8,7 +8,7 @@ Gem::Specification.new do |s|
   s.platform    = Gem::Platform::RUBY
   s.authors     = ["Matt Biddulph"]
   s.email       = ["mb@hackdiary.com"]
-  s.homepage    = ""
+  s.homepage    = "https://github.com/mattb/instapaper_full"
   s.summary     = %q{Wrapper for the Instapaper Full Developer API}
   s.description = %q{See http://www.instapaper.com/api/full}
 

@@ -6,6 +6,10 @@ Draft version.
 
 Note that you need to [request OAuth Application tokens manually](http://www.instapaper.com/main/request_oauth_consumer_token) and that most methods only work for Instapaper subscribers.
 
+# Installation
+
+    gem install instapaper_full
+
 # Examples
 
     ip = InstapaperFull::API.new :consumer_key => "my key", :consumer_secret => "my secret"
