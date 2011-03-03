@@ -78,7 +78,7 @@ module InstapaperFull
     end
 
     def bookmarks_add(options=nil)
-      call('bookmarks/add')
+      call('bookmarks/add',options)
     end
 
     def bookmarks_delete(options=nil)
