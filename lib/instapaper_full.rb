@@ -62,10 +62,7 @@ module InstapaperFull
           r.body = body
         end
       end
-      if result.status == 200
-        return result.body
-      end
-      return nil
+      return result.body
     end
 
     def verify_credentials
