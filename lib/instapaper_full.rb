@@ -9,13 +9,16 @@ module InstapaperFull
       @options = options
     end
 
-    def connection
-      options = {
+    def connection(options = {})
+      skip_json = options.delete(:skip_json)
+
+      options.merge!({
         :proxy => @options[:proxy],
         :ssl => {:verify => false},
         :url => "https://www.instapaper.com/api/1/"
-      }
-      oauth_options = { 
+      })
+
+      oauth_options = {
         :consumer_key => @options[:consumer_key],
         :consumer_secret => @options[:consumer_secret]
       }
@@ -24,13 +27,13 @@ module InstapaperFull
         oauth_options[:token] = @options[:oauth_token]
         oauth_options[:token_secret] = @options[:oauth_token_secret]
       end
-      
+
       Faraday.new(options) do |builder|
         builder.use Faraday::Request::OAuth, oauth_options
         builder.use Faraday::Request::UrlEncoded
-        builder.use Faraday::Response::Logger 
+        builder.use Faraday::Response::Logger
         builder.adapter Faraday.default_adapter
-        if authenticated?
+        if authenticated? && !skip_json
           builder.use Faraday::Response::ParseJson
         end
       end
@@ -61,11 +64,10 @@ module InstapaperFull
       end
     end
 
-    def call(method, body = nil)
-      result = connection.post(method) do |r|
-        if body
-          r.body = body
-        end
+    def call(method, body = {})
+      skip_json = body.delete(:skip_json)
+      result = connection({:skip_json => skip_json}).post(method) do |r|
+        r.body = body unless body.empty?
       end
       return result.body
     end
@@ -74,43 +76,44 @@ module InstapaperFull
       call('account/verify_credentials')[0]
     end
 
-    def bookmarks_list(options=nil)
+    def bookmarks_list(options = {})
       call('bookmarks/list', options)[2..-1] # slice off the 'meta' and 'user' from the front of the array
     end
 
-    def bookmarks_update_read_progress(options=nil)
+    def bookmarks_update_read_progress(options = {})
       call('bookmarks/update_read_progress', options)
     end
 
-    def bookmarks_add(options=nil)
+    def bookmarks_add(options = {})
       call('bookmarks/add',options)
     end
 
-    def bookmarks_delete(options=nil)
+    def bookmarks_delete(options = {})
       call('bookmarks/delete', options)
     end
 
-    def bookmarks_star(options=nil)
+    def bookmarks_star(options = {})
       call('bookmarks/star', options)
     end
 
-    def bookmarks_unstar(options=nil)
+    def bookmarks_unstar(options = {})
       call('bookmarks/unstar', options)
     end
 
-    def bookmarks_archive(options=nil)
+    def bookmarks_archive(options = {})
       call('bookmarks/archive', options)
     end
 
-    def bookmarks_unarchive(options=nil)
+    def bookmarks_unarchive(options = {})
       call('bookmarks/unarchive', options)
     end
 
-    def bookmarks_move(options=nil)
+    def bookmarks_move(options = {})
       call('bookmarks/move', options)
     end
 
-    def bookmarks_get_text(options=nil)
+    def bookmarks_get_text(options = {})
+      options[:skip_json] = true
       call('bookmarks/get_text', options)
     end
 
@@ -118,15 +121,15 @@ module InstapaperFull
       call('folders/list')
     end
 
-    def folders_add(options=nil)
+    def folders_add(options = {})
       call('folders/add', options)
     end
 
-    def folders_delete(options=nil)
+    def folders_delete(options = {})
       call('folders/delete', options)
     end
 
-    def folders_set_order(options=nil)
+    def folders_set_order(options = {})
       call('folders/set_order', options)
     end
   end
