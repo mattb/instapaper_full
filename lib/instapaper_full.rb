@@ -46,7 +46,7 @@ module InstapaperFull
     def authenticate(username,password)
       @options.delete(:oauth_token)
       @options.delete(:oauth_token_secret)
-      result = connection.post 'oauth/access_token' do |r| 
+      result = connection.post 'oauth/access_token' do |r|
         r.body = { :x_auth_username => username, :x_auth_password => password, :x_auth_mode => "client_auth" }
       end
       if result.status == 200
