@@ -77,7 +77,7 @@ module InstapaperFull
     end
 
     def bookmarks_list(options = {})
-      call('bookmarks/list', options)[2..-1] # slice off the 'meta' and 'user' from the front of the array
+      call('bookmarks/list', options)
     end
 
     def bookmarks_update_read_progress(options = {})
