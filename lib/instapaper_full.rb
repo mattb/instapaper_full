@@ -1,4 +1,6 @@
-require 'faraday/oauth'
+require 'json'
+require 'faraday/request/oauth'
+require 'faraday/response/parse_json'
 
 module InstapaperFull
   class API
@@ -17,16 +19,19 @@ module InstapaperFull
         :consumer_key => @options[:consumer_key],
         :consumer_secret => @options[:consumer_secret]
       }
+
       if authenticated?
         oauth_options[:token] = @options[:oauth_token]
         oauth_options[:token_secret] = @options[:oauth_token_secret]
       end
       
-      Faraday::Connection.new(options) do |builder|
+      Faraday.new(options) do |builder|
         builder.use Faraday::Request::OAuth, oauth_options
+        builder.use Faraday::Request::UrlEncoded
+        builder.use Faraday::Response::Logger 
         builder.adapter Faraday.default_adapter
         if authenticated?
-          builder.response :yajl
+          builder.use Faraday::Response::ParseJson
         end
       end
     end
