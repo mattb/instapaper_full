@@ -2,8 +2,6 @@
 
 Ruby wrapper for the [Instapaper Full API](http://www.instapaper.com/api/full)
 
-Draft version.
-
 Note that you need to [request OAuth Application tokens manually](http://www.instapaper.com/main/request_oauth_consumer_token) and that most methods only work for Instapaper subscribers.
 
 # Installation
@@ -20,3 +18,8 @@ Note that you need to [request OAuth Application tokens manually](http://www.ins
         puts b['url']
       end
     end
+
+# Authors
+
+* [Matt Biddulph](http://github.com/mattb)
+* [Tom Taylor / Newspaper Club](http://github.com/tomtaylor)
