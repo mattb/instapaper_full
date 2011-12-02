@@ -47,6 +47,10 @@ class InstapaperAPITest < Test::Unit::TestCase
 
     ip = InstapaperFull::API.new(:consumer_key => "test", :consumer_secret => "")
     assert_equal true, ip.authenticate("tom@testing.com", "test")
+    assert_equal "thisisatoken", ip.options[:oauth_token]
+    assert_equal "thisisasecret", ip.options[:oauth_token_secret]
+    assert_equal 140230, ip.options[:user_id]
+    assert_equal "tom@tomtaylor.co.uk", ip.options[:username]
   end
 
   def test_failed_authentication

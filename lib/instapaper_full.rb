@@ -5,7 +5,7 @@ require 'faraday/response/parse_json'
 
 module InstapaperFull
   class API
-    attr_accessor :params
+    attr_accessor :options
     def initialize(options = {})
       @options = options
     end
