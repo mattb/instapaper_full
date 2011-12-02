@@ -34,6 +34,18 @@ class InstapaperAPITest < Test::Unit::TestCase
     )
   end
 
+  def stub_successful_bookmarks_get_text
+    stub_request(:post, "https://www.instapaper.com/api/1/bookmarks/get_text").
+      with(:body => {"bookmark_id"=>"1"}).
+      to_return(http_response('bookmarks_get_text_success'))
+  end
+
+  def stub_failed_bookmarks_get_text
+    stub_request(:post, "https://www.instapaper.com/api/1/bookmarks/get_text").
+      with(:body => {"bookmark_id"=>"2"}).
+      to_return(http_response('bookmarks_get_text_failure'))
+  end
+
   def authenticated_client
     InstapaperFull::API.new(:consumer_key => "key",
                             :consumer_secret => "secret",
@@ -78,4 +90,26 @@ class InstapaperAPITest < Test::Unit::TestCase
     end
   end
 
+  def test_successful_bookmarks_get_text
+    stub_successful_bookmarks_get_text
+
+    html = authenticated_client.bookmarks_get_text(:bookmark_id => 1)
+    assert html.kind_of?(String)
+    assert_equal 22788, html.length
+  end
+
+  def test_failed_bookmarks_get_text
+    stub_failed_bookmarks_get_text
+
+    assert_raise(InstapaperFull::API::Error) do
+      authenticated_client.bookmarks_get_text(:bookmark_id => 2)
+    end
+
+    begin
+      authenticated_client.bookmarks_get_text(:bookmark_id => 2)
+    rescue InstapaperFull::API::Error => e
+      assert_equal 1241, e.code
+      assert_equal "Invalid or missing bookmark_id", e.message
+    end
+  end
 end
