@@ -1,0 +1,14 @@
+HTTP/1.1 400 Bad Request
+Date: Thu, 01 Dec 2011 16:43:12 GMT
+Server: Apache
+P3P: CP="ALL ADM DEV PSAi COM OUR OTRo STP IND ONL"
+X-Robots-Tag: noindex
+Cache-Control: no-cache
+Pragma: no-cache
+X-Powered-By: a lot of coffee and Phish
+Vary: Accept-Encoding
+Content-Length: 70
+Connection: close
+Content-Type: application/json
+
+[{"type":"error","error_code":1240,"message":"Invalid URL specified"}]

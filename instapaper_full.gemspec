@@ -6,8 +6,8 @@ Gem::Specification.new do |s|
   s.name        = "instapaper_full"
   s.version     = InstapaperFull::VERSION
   s.platform    = Gem::Platform::RUBY
-  s.authors     = ["Matt Biddulph"]
-  s.email       = ["mb@hackdiary.com"]
+  s.authors     = ["Matt Biddulph", "Tom Taylor"]
+  s.email       = ["mb@hackdiary.com", "tom@tomtaylor.co.uk"]
   s.homepage    = "https://github.com/mattb/instapaper_full"
   s.summary     = %q{Wrapper for the Instapaper Full Developer API}
   s.description = %q{See http://www.instapaper.com/api/full}
@@ -26,4 +26,6 @@ Gem::Specification.new do |s|
   s.add_dependency("yajl-ruby", "~> 1.1.0")
 
   s.add_development_dependency("rake")
+  s.add_development_dependency("test-unit", "~> 2.4.2")
+  s.add_development_dependency("webmock", "~> 1.7.8")
 end

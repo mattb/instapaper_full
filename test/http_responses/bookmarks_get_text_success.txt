@@ -1,0 +1,436 @@
+HTTP/1.1 200 OK
+Date: Thu, 01 Dec 2011 16:35:34 GMT
+Server: Apache
+P3P: CP="ALL ADM DEV PSAi COM OUR OTRo STP IND ONL"
+X-Robots-Tag: noindex
+Cache-Control: no-cache
+Pragma: no-cache
+X-Powered-By: a lot of coffee and Phish
+Vary: Accept-Encoding
+Connection: close
+Transfer-Encoding: chunked
+Content-Type: text/html; charset=utf-8
+
+
+<html>
+    <head>
+        <title>Wieden+Kennedy &raquo; Why We&rsquo;re Not Hiring Creative Technologists</title>
+        <meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no; minimum-scale=1.0; maximum-scale=1.0;" />
+    	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <meta name="robots" content="noindex"/>
+        <link rel="icon" href="/images/favicon.png"/>
+<!-- IP:TITLE
+Wieden+Kennedy » Why We’re Not Hiring Creative Technologists
+/IP:TITLE -->
+<!-- IP:IMAGES
+
+/IP:IMAGES -->
+        <style type="text/css">
+            body {
+                font-family: Georgia;
+                font-size: 16px;
+                margin: 0px auto 0px auto;
+                width: 500px                                word-wrap: break-word;
+            }
+            
+            h1 { font-size: 1.3em; }
+            h2 { font-size: 1.15em; }
+            h3, h4, h5, h6, h7 { font-size: 1.0em; }
+            
+            img { border: 0; display: block; margin: 0.5em 0; }
+            pre, code { overflow: scroll; }
+            #story { 
+                                clear: both; padding: 0 10px; overflow: hidden; margin-bottom: 40px; 
+            }
+
+            .bar {
+                color: #555;
+                font-family: 'Helvetica'; 
+                font-size: 11pt;
+                                    margin: 0 -20px;
+                    padding: 10px 0;
+                            }            
+            .top { border-bottom: 2px solid #000; }
+            
+                        .top a {
+                display: block;
+                float: right;
+                text-decoration: none;
+                font-size: 11px;
+                background-color: #eee;
+                -webkit-border-radius: 8px;
+                -moz-border-radius: 8px;
+                padding: 2px 15px;
+            }
+                        
+            #story div {
+                margin: 1em 0;
+            }
+            
+            .bottom {
+                border-top: 2px solid #000;
+                color: #555;
+            }
+
+            .bar a { color: #444; }
+            
+            blockquote {
+                border-top: 1px solid #bbb;
+                border-bottom: 1px solid #bbb;
+                margin: 1.5em 0;
+                padding: 0.5em 0;
+            }
+            blockquote.short { font-style: italic; }
+            
+            pre {
+                white-space: pre-wrap;
+            }
+            
+            ul.bodytext, ol.bodytext {
+            	list-style: none;
+            	margin-left: 0;
+            	padding-left: 0em;
+            }
+            
+                    </style>
+            </head>
+    <body onload="loadFont();">
+        <div class="bar top">
+                            <a href="http://blog.wk.com/2011/10/21/why-we-are-not-hiring-creative-technologists/">View original</a>
+                <div class="sm">blog.wk.com</div>
+                    </div>
+        
+        <div id="editing_controls" style="float: right; padding-top: 2px;">
+                    </div>
+        
+        <div id="story">
+<div>
+<h1><a href="http://blog.wk.com/2011/10/21/why-we-are-not-hiring-creative-technologists/" rel="bookmark" title="Permanent Link to Why We&#x2019;re Not Hiring Creative Technologists">
+Why We’re Not Hiring Creative Technologists</a></h1>
+<p><a href="http://blog.wk.com/2011/10/20/why-we%E2%80%99re-not-hiring-creative-technologists">
+<img title="102011programming" src="http://blog.wk.com/wordpress/wp-content/uploads/2011/10/102011programming.jpg" alt="" /></a></p>
+<p>In the digital, interactive and social media-focused agency
+world, it’s easy to talk a big game, but for disciplines that
+require true, deep knowledge of the subject for success,
+there’s a fine line between “understanding” and
+“expertise”. Our Creative Technology Director Igor
+Clark explains why ideas aren’t enough, below the jump.</p>
+<p><br />
+By Igor Clark, Creative Technology Director</p>
+<p>I’ve pretty much had it with the term “Creative
+Technology”. I’m a “Creative Technology
+Director” myself, and even I’m over it: already it
+seems clichéd at best, and at worst, bordering on the
+meaningless. Here’s why.</p>
+<p>Not so long ago, the rise and rise of “digital”
+meant agencies having to come up with increasing amounts of
+interactive work. They didn’t know how to do it, so their
+developers got screwed, and the work suffered. Horribly.</p>
+<p>Few outside the tech teams grasped what was involved in building
+the software needed for digital campaigns. Crazy deadlines,
+unrealistic expectations, ill-considered and even ill-advised
+requirements led to ever-more “inventive” technical
+solutions. Then, when the last-minute hack they had to cobble
+together failed to stand up to the traffic they never promised it
+would, developers were cursed and vilified.</p>
+<p>But this wasn’t the really bad part. Software folk who
+found their way into agency-land either loved it, and stayed
+– or they didn’t, and left. For the ones who stuck
+around, and who felt the pain most acutely, the really bad part
+wasn’t the pressure or the deadlines: it was that their work
+wasn’t understood, so it wasn’t properly
+recognized.</p>
+<p>Their work wasn’t purely science or technology; though
+grounded in both, it was far from the simple application of
+formulae or solving of equations. Developers knew that you
+couldn’t take a creative brief as a set of instructions and
+just “translate” it into software. You have to
+interpret it, and that takes an extra spark. A creative spark. They
+saw this was a fundamental part of the overall interactive creative
+process, and yet a parallel, creative process of its own. The
+naming perpetuated the misunderstanding, and so it had to
+change.</p>
+<p>At the same time, people across agencies were recognizing that
+their existing creative model just wasn’t working out for
+“interactive”. Crews outside the fortress walls were
+doing innovative and engaging work, not only through using new and
+different technologies to do it (openFrameworks, Processing, robots
+and Arduino, computer vision &amp; Kinect, projection mapping, the
+list goes on), but also by trying out different approaches and
+processes. Namely: the technology was the creative.</p>
+<p><img title="102011kinect" src="http://blog.wk.com/wordpress/wp-content/uploads/2011/10/102011kinect.jpg" alt="" /></p>
+<p><em><small>Photo by <a href="http://www.flickr.com/photos/maveric2003/5810664761/sizes/z/in/photostream/">
+maveric2003</a>, licensed under the <a href="http://creativecommons.org/licenses/by/2.0/">Creative
+Commons</a></small></em></p>
+<p>In this way, “creative technology” was born: partly
+to assuage the accumulating angst of downtrodden developers; partly
+to enable those developers willing to step up to the creative plate
+also to step outside the conventional development toolkit; and
+partly – perhaps most importantly – to spread awareness
+across the board that where interactive work is concerned, creating
+involves making; making interactive stuff involves technology; and
+people can be creative in a range of disciplines, not only blue-sky
+ideation.</p>
+<p>At its inception, this was A Good Thing, and it happened for
+Good Reasons. So what happened? Why do I now find myself wondering
+whether Creative Technology, as a label and a discipline, is
+effectively bankrupt?</p>
+<p>As in any new, burgeoning and (to many) incomprehensible field,
+most people have neither the background nor the time to get under
+the surface and really understand what it’s all about. So
+they need people to help do that.</p>
+<p>Unfortunately, in any field requiring background and time to get
+beneath the surface, the ninja dust is easy to throw in the faces
+of the uninitiated, disguising the underlying truth – which
+is, all too frequently, only a surface-level familiarity with the
+necessary materials.</p>
+<p>University and training courses spring up, servicing the new
+market of people wanting to get educated in the new field. Courses
+need funding; funding requires admissions; admissions policies get
+broadened; broad admissions policies welcome novices and amateurs.
+Ergo, disciplines become ill-disciplined, specialization becomes
+flabby and watered-down to the point of meaninglessness.</p>
+<p>Outcome: “creative technologists” who think that
+their daily use of social media, “passion for digital”
+and pile of half-baked ideas about QR codes, mobile integration and
+Facebook apps constitute an entitlement to have those ideas brought
+to life by the still-downtrodden developers, still languishing in
+the dungeons of overworked production companies and in-house
+development teams.</p>
+<p><img title="102011code2" src="http://blog.wk.com/wordpress/wp-content/uploads/2011/10/102011code2.jpg" alt="" /></p>
+<p><em><small>Photo by <a href="http://twitter.com/igorclark/">Igor
+Clark</a></small></em></p>
+<p>As a result, “Creative Technology” has become
+watered down to the point where people fresh out of “creative
+tech” courses need only sprinkle some of that digital
+ninja-dust on their resumés, and those without the requisite
+background, know-how and experience to sort the wheat from the
+chaff are none the wiser.</p>
+<p>The talent drifts off. The ninjas plan and conceive the work,
+and analyse its success, using metrics no-one else understands. Bad
+work proliferates, becomes accepted and normalized within the
+industry; the really good people get further alienated, more dust
+is thrown to disguise others taking their places, and round and
+round it goes, until no-one knows who’s a ninja and
+who’s not. Except for the best people, who’ve left the
+agency scene in the dust – and the audience, of course, who
+are left unmoved. Or, worse, switched off.</p>
+<p>Is this pattern inevitable? Can we, as agency-land
+technologists, do anything about it?</p>
+<p>Clearly many non-technical factors are involved, but there is
+one simple and concrete thing we can do: stop hiring
+“creative technologists”. Hire coders. Reject
+compromise on this front, and resist pressure to give in to it.
+Only hire people to work at the crossover of creative and
+technology if they have strong, practical, current coding
+skills.</p>
+<p>Don’t fall for the illusion that a candidate is creatively
+strong enough to compensate for the weak code. Spending a year or
+two on a training course gaining a passing acquaintance with a
+couple of trending technologies isn’t good enough. They need
+to live and breathe this stuff, and to use the appropriate
+languages and tools fluently and transparently, without stopping to
+think about it. So if a person puts “creative
+technologist” on their resumé, but doesn’t know
+how to code, can’t show you things they’ve made, and
+can’t prove they made them by explaining why they wrote the
+code the way they did, don’t hire them. Simple as that.</p>
+<p>Think this sounds elitist? Well, it is – and there’s
+a reason.</p>
+<p><img title="102011pages" src="http://blog.wk.com/wordpress/wp-content/uploads/2011/10/102011pages.jpg" alt="" /></p>
+<p><em><small>Photo by <a href="http://twitter.com/igorclark/">Igor
+Clark</a></small></em></p>
+<p>Agencies don’t hire writers just because they know the
+rules of grammar. We hire them because they’re eloquent,
+lucid, imaginative wordsmiths. We hire them because of their
+practised ability to lovingly craft words into things that work.
+Things that make people feel.</p>
+<p>There are people who engineer excellent software. There are
+people who come up with amazing ideas. The interactive space by
+definition requires the fusion of the two, and technology at the
+heart of creation. At the point of intersection, you’re going
+to need people who understand both, and who have one foot on either
+side. As Forrester’s Mike Gualtieri recently wrote in
+<a href="http://blogs.forrester.com/mike_gualtieri/11-10-12-agile_software_is_a_cop_out_heres_whats_next">
+a fresh piece about how to create great software</a>, that means
+“renaissance developers who have passion, creativity,
+discipline, domain knowledge, and user empathy”.</p>
+<p>This is difficult territory for creative agencies. Maybe you
+don’t know how to hire these people yet. Maybe it
+doesn’t fit with your structures. Tough, isn’t it? But
+you’re going to have to deal with it, and fix it.</p>
+<p>Ultimately, to do that you need to provide an environment
+that’s as appealing and satisfying for extraordinary,
+creative software people as the one you already provide is for
+traditional creative folks. But it also needs to be as appealing to
+this new breed as their potential alternate settings at Google,
+Facebook, Tech Startup X. Fortunately, you have the potential to
+make it even more so for genuine creative coders – because
+they’re not looking for pure engineering any more than you
+are.</p>
+<p>While you don’t need to become an engineering company, you
+face some of their challenges. You need to understand, accept and
+embrace some of the nuts and bolts of software development, and
+take on board the work dedicated shops are doing on its processes.
+You need such a strong streak of code running through the
+atmosphere that coders want to come to you, and everyone else gets
+code spilling over them.</p>
+<p>But “digital” is a hybrid realm, and you need to
+provide a balance. Fortunately, you’re in a perfect position
+to counterpoint the engineering-first environment that others have
+so successfully developed, leading so successfully to technically
+excellent, efficient, and often creatively uninspiring work. You
+have the creative angle covered (right?), so to get to the hybrid
+middle-ground, you have to allow developers the flexibility, the
+leeway and the time to engineer solid work – and you have to
+welcome the hybrid creative coders into the heart of what you do,
+to make a hybrid place where they feel at home, and where they can
+help ensure that what gets sold makes sense, and that it can be
+made without actually killing a team of engineers in the
+attempt.</p>
+<p><img title="102011comment" src="http://blog.wk.com/wordpress/wp-content/uploads/2011/10/102011comment.jpg" alt="" /></p>
+<p><em><small>Photo by <a href="http://twitter.com/igorclark/">Igor
+Clark</a></small></em></p>
+<p>Don’t get me wrong, this is hard, and it’ll take
+time. It’s not just procedural, but cultural, so a big part
+of doing it comes down to who you hire and how you let them do
+their thing. But that’s exactly the point. That’s why
+it’s most important, way before you get all that fixed, and
+as the first major step on that road: just don’t hire
+“creative technologists” who aren’t strong
+coders.</p>
+<p>Bottom line, these people need to make stuff, fast. They need to
+prove or disprove concepts, in ways that non-technologists
+understand, fast. So they need to know how to code efficiently,
+economically and effectively. They need to understand the
+appropriate technology stack from top to bottom, know which tools
+are right for the job – and most of all, they must be
+prepared to crack their knuckles, roll up their sleeves and get
+their fingers into the code. Up to the elbows.</p>
+<p>You’re probably thinking, “OK, those people are few
+and far between; we still need people to bridge the gap between
+them and the rest of the agency”. You’re not wrong;
+you’ve put your finger straight on the really interesting
+corollary, and the exact reason why creative agencies could be the
+most inspiring environment for creative coders, which is simply
+this: we have to be.</p>
+<p>With integrated interactive work ever more critical, creative
+agencies need to change drastically, in ways that suit perfectly
+those people we most need to attract. We need to adapt and evolve
+to survive. The serious talent is doing it for itself; going to
+small shops, shooting solo. To reach the very best people, we need
+to change in ways that make them want to come to us; to allow and
+even help them to change us, and to help us shape our
+evolution.</p>
+<p><img title="102011code1" src="http://blog.wk.com/wordpress/wp-content/uploads/2011/10/102011code1.jpg" alt="" /></p>
+<p><em><small>Photo by <a href="http://twitter.com/igorclark/">Igor
+Clark</a></small></em></p>
+<p>This is more than “building a digital team”, or
+“covering digital bases”. The agency as a whole has to
+step up to the tectonic plate and realize that not only are
+digital, social, interactive, gaming all here to stay, but they
+already permeate the entire landscape of what consumers are doing.
+We need to change our processes, structures and approach to how we
+create in order to accommodate this stuff, and open our arms to the
+people who make it happen.</p>
+<p>Start off by refusing to believe people who tell you that hiring
+them to do the understanding for you means you can carry on as you
+were. Instead, hire the right people in the right places, and make
+the changes necessary to let them do what they do. Creative people
+who can code up a storm, and, critically, experienced people who
+can properly assess the code they’re shown. These are the
+people who will help us flourish – if we can help them to do
+the same.</p>
+<p>At W+K we’re always looking to meet good technology
+people, and we want to read your code. Developers, engineers,
+creative coders. If that’s you, if you’ve got the
+endurance to make it this far, and if you’re interested in
+applying your creativity through code with us in Portland, then why
+not <a href="http://www.wk.com/jobs/portland/technology">get in
+touch</a>?</p>
+<p>Find Igor on Twitter at <a href="http://twitter.com/igorclark">@IgorClark</a>.</p>
+<p>Posted on 10.21.11</p>
+<div>
+<p>Category: <a href="http://blog.wk.com/category/guest-post/" title="View all posts in Guest Post" rel="category tag">Guest
+Post</a>, <a href="http://blog.wk.com/category/interactive/" title="View all posts in Interactive" rel="category tag">Interactive</a></p>
+</div>
+<p><a href="http://blog.wk.com/2011/10/17/wk-12-7-class-graduates-celebrates/" rel="prev">«&#160;Older Post</a></p>
+<div>
+<h2>Features</h2>
+<div>
+<ul class="bodytext"><li><a href="http://blog.wk.com/2011/09/20/dan-wieden-honored-with-catalyst-award-at-2011-adcolor-awards/">
+<img src="http://blog.wk.com/wordpress/wp-content/uploads/2011/09/092011danadcolor-310x139.jpg" alt="092011danadcolor" title="092011danadcolor" /></a>
+<h3><a href="http://blog.wk.com/2011/09/20/dan-wieden-honored-with-catalyst-award-at-2011-adcolor-awards/">
+Dan Wieden Honored with Catalyst Award at 2011 Adcolor
+Awards</a></h3>
+<p>This week, our own Dan Wieden was honored with the Catalyst
+award at the 2011 Adcolor Awards ceremony in Los Angeles. Dan has
+always been committed to making the voice and people of advertising
+and specifically W+K more diverse. Our diversity and inclusion
+manager Porsha Monroe has shared some thoughts with us.</p>
+<a href="http://blog.wk.com/2011/09/20/dan-wieden-honored-with-catalyst-award-at-2011-adcolor-awards/">Read
+More…</a></li>
+<li><a href="http://blog.wk.com/2011/09/07/wk-community-mayor-sam-adams-celebrate-first-thursday-portland-incubator-experiment-pie-ribbon-cutting/">
+<img src="http://blog.wk.com/wordpress/wp-content/uploads/2011/09/090711piemain-310x139.jpg" alt="090711piemain" title="090711piemain" /></a>
+<h3><a href="http://blog.wk.com/2011/09/07/wk-community-mayor-sam-adams-celebrate-first-thursday-portland-incubator-experiment-pie-ribbon-cutting/">
+W+K Community &amp; Mayor Sam Adams Celebrate First Thursday
+Portland Incubator Experiment (PIE) Ribbon-Cutting</a></h3>
+<p>Members of Wieden+Kennedy, the Portland tech community, Mayor
+Sam Adams and our friends and associates gathered together for last
+week’s <a href="http://www.firstthursdayportland.com/">First
+Thursday</a> to celebrate the official ribbon cutting ceremony for
+the <a href="http://piepdx.com">Portland Incubator Experiment</a>
+(more commonly known as PIE), a collaborative center that partners
+leading brands with technology innovators to cultivate community,
+entrepreneurship and creative thinking.</p>
+<a href="http://blog.wk.com/2011/09/07/wk-community-mayor-sam-adams-celebrate-first-thursday-portland-incubator-experiment-pie-ribbon-cutting/">Read
+More…</a></li>
+<li><a href="http://blog.wk.com/2011/08/29/musician-and-comic-book-artist-daniel-johnston-concludes-space-ducks-art-show-with-concert-performance-in-wk-foyer/">
+<img src="http://blog.wk.com/wordpress/wp-content/uploads/2011/08/082911djmain-310x139.jpg" alt="082911djmain" title="082911djmain" /></a>
+<h3><a href="http://blog.wk.com/2011/08/29/musician-and-comic-book-artist-daniel-johnston-concludes-space-ducks-art-show-with-concert-performance-in-wk-foyer/">
+Musician &amp; Comic Artist Daniel Johnston Concludes <em>Space
+Ducks</em> Art Show with Concert Performance in W+K Foyer</a></h3>
+<p>On Thursday, the month-long show of Daniel Johnston’s
+Space Ducks: An Infinite Comic Book of Musical Greatness concluded
+with a performance by the man himself. The event coincided with the
+relaunch of his site, http://hihowareyou.com, produced in
+partnership with W+K and WKE.</p>
+<a href="http://blog.wk.com/2011/08/29/musician-and-comic-book-artist-daniel-johnston-concludes-space-ducks-art-show-with-concert-performance-in-wk-foyer/">Read
+More…</a></li>
+</ul></div>
+</div>
+<div>
+<h2>Goodness</h2>
+<div>
+<ul class="bodytext"><li><a href="http://wkstudio.bigcartel.com/product/deep-down-inside-we-all-love-math-t-shirt">
+<img src="http://blog.wk.com/wordpress/wp-content/files_mf/math_shirt.jpg" alt="image" /></a>
+<h3><a href="http://wkstudio.bigcartel.com/product/deep-down-inside-we-all-love-math-t-shirt">
+We All Love Math T-shirt</a></h3>
+<p>If this shirt + its thesis succeed, we will all revel in our
+essential mathness.</p>
+</li>
+<li><a href="http://wkstudio.bigcartel.com/product/graphics-design-t-shirt"><img src="http://blog.wk.com/wordpress/wp-content/files_mf/graphicshirt.jpg" alt="image" /></a>
+<h3><a href="http://wkstudio.bigcartel.com/product/graphics-design-t-shirt">Graphics
+Design™ T-shirt</a></h3>
+<p>The soul-wrenching existential crisis many commercial artists
+struggle with…</p>
+</li>
+<li><a href="http://wkstudio.bigcartel.com/product/teen-baby-onesie"><img src="http://blog.wk.com/wordpress/wp-content/files_mf/babyshirt.jpg" alt="image" /></a>
+<h3><a href="http://wkstudio.bigcartel.com/product/teen-baby-onesie">Modern
+Baby Onesie</a></h3>
+<p>You are observing a genuine onesie that… Oh, man. That
+baby’s such a dick.</p>
+</li>
+</ul><p><a href="http://wkstudio.bigcartel.com/">See more at the
+Goodness Store.</a></p>
+</div>
+</div>
+
+
+
+</div></div>
+        
+        <div class="bar bottom">
+                    </div>
+    </body>
+</html>
