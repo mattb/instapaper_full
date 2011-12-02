@@ -15,4 +15,8 @@ Note that you need to [request OAuth Application tokens manually](http://www.ins
     ip = InstapaperFull::API.new :consumer_key => "my key", :consumer_secret => "my secret"
     ip.authenticate "someone@example.com", "password"
     puts ip.options.user_id
-    puts ip.bookmarks_list(:limit => 1)[0]['url']
+    ip.bookmarks_list(:limit => 1) do |b|
+      if b['type'] == 'bookmark'
+        puts b['url']
+      end
+    end

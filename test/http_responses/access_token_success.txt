@@ -1,0 +1,14 @@
+HTTP/1.1 200 OK
+Date: Thu, 01 Dec 2011 16:31:04 GMT
+Server: Apache
+P3P: CP="ALL ADM DEV PSAi COM OUR OTRo STP IND ONL"
+X-Robots-Tag: noindex
+Cache-Control: no-cache
+Pragma: no-cache
+X-Powered-By: a lot of coffee and Phish
+Vary: Accept-Encoding
+Content-Length: 132
+Connection: close
+Content-Type: application/x-www-form-urlencoded
+
+oauth_token=thisisatoken&oauth_token_secret=thisisasecret

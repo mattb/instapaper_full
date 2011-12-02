@@ -1,0 +1,14 @@
+HTTP/1.1 401 Unauthorized
+Date: Thu, 01 Dec 2011 16:32:47 GMT
+Server: Apache
+P3P: CP="ALL ADM DEV PSAi COM OUR OTRo STP IND ONL"
+X-Robots-Tag: noindex
+Cache-Control: no-cache
+Pragma: no-cache
+X-Powered-By: a lot of coffee and Phish
+Vary: Accept-Encoding
+Content-Length: 26
+Connection: close
+Content-Type: text/html; charset=UTF-8
+
+Invalid xAuth credentials.

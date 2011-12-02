@@ -26,4 +26,6 @@ Gem::Specification.new do |s|
   s.add_dependency("yajl-ruby", "~> 1.1.0")
 
   s.add_development_dependency("rake")
+  s.add_development_dependency("test-unit", "~> 2.4.2")
+  s.add_development_dependency("webmock", "~> 1.7.8")
 end
