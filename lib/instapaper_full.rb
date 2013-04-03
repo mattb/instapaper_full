@@ -1,7 +1,7 @@
 require 'errors'
 require 'json'
-require 'faraday/request/oauth'
-require 'faraday/response/parse_json'
+require 'faraday'
+require 'faraday_middleware'
 
 module InstapaperFull
   class API
