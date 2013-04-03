@@ -19,8 +19,8 @@ Gem::Specification.new do |s|
   s.executables   = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
   s.require_paths = ["lib"]
 
-  s.add_dependency("faraday", "~> 0.7.5")
-  s.add_dependency("faraday_middleware", "~> 0.7.0")
+  s.add_dependency("faraday")
+  s.add_dependency("faraday_middleware")
   s.add_dependency("simple_oauth", "~> 0.1")
   s.add_dependency("multi_json", "~> 1.0.4")
   s.add_dependency("yajl-ruby", "~> 1.1.0")
