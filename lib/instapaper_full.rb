@@ -1,7 +1,7 @@
 require 'errors'
 require 'json'
-require 'faraday/request/oauth'
-require 'faraday/response/parse_json'
+require 'faraday'
+require 'faraday_middleware'
 
 module InstapaperFull
   class API
@@ -28,6 +28,7 @@ module InstapaperFull
       end
 
       Faraday.new(options) do |builder|
+        builder.use Faraday::Request::Multipart
         builder.use Faraday::Request::OAuth, oauth_params
         builder.use Faraday::Request::UrlEncoded
         builder.adapter Faraday.default_adapter
