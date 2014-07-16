@@ -5,43 +5,43 @@ class InstapaperAPITest < Test::Unit::TestCase
   include AssetHelpers
 
   def stub_successful_authentication
-    stub_request(:post, "https://www.instapaper.com/api/1/oauth/access_token").to_return(
+    stub_request(:post, "https://www.instapaper.com/api/1.1/oauth/access_token").to_return(
       http_response('access_token_success')
     )
   end
 
   def stub_failed_authentication
-    stub_request(:post, "https://www.instapaper.com/api/1/oauth/access_token").to_return(
+    stub_request(:post, "https://www.instapaper.com/api/1.1/oauth/access_token").to_return(
       http_response('access_token_failure')
     )
   end
 
   def stub_successful_verify_credentials
-    stub_request(:post, "https://www.instapaper.com/api/1/account/verify_credentials").to_return(
+    stub_request(:post, "https://www.instapaper.com/api/1.1/account/verify_credentials").to_return(
       http_response('verify_credentials_success')
     )
   end
 
   def stub_successful_bookmarks_list
-    stub_request(:post, "https://www.instapaper.com/api/1/bookmarks/list").to_return(
+    stub_request(:post, "https://www.instapaper.com/api/1.1/bookmarks/list").to_return(
       http_response('bookmarks_list_success')
     )
   end
 
   def stub_failed_bookmarks_add
-    stub_request(:post, "https://www.instapaper.com/api/1/bookmarks/add").to_return(
+    stub_request(:post, "https://www.instapaper.com/api/1.1/bookmarks/add").to_return(
       http_response('bookmarks_add_failure')
     )
   end
 
   def stub_successful_bookmarks_get_text
-    stub_request(:post, "https://www.instapaper.com/api/1/bookmarks/get_text").
+    stub_request(:post, "https://www.instapaper.com/api/1.1/bookmarks/get_text").
       with(:body => {"bookmark_id"=>"1"}).
       to_return(http_response('bookmarks_get_text_success'))
   end
 
   def stub_failed_bookmarks_get_text
-    stub_request(:post, "https://www.instapaper.com/api/1/bookmarks/get_text").
+    stub_request(:post, "https://www.instapaper.com/api/1.1/bookmarks/get_text").
       with(:body => {"bookmark_id"=>"2"}).
       to_return(http_response('bookmarks_get_text_failure'))
   end
@@ -75,7 +75,9 @@ class InstapaperAPITest < Test::Unit::TestCase
   def test_successful_bookmarks_list
     stub_successful_bookmarks_list
     list = authenticated_client.bookmarks_list
-    assert_equal 27, list.length # 25 + 1 user element + 1 meta element
+    assert list.has_key?('user')
+    assert list.has_key?('bookmarks')
+    assert list.has_key?('highlights')
   end
 
   def test_failed_bookmarks_add

@@ -13,8 +13,8 @@ module InstapaperFull
     def connection(options = {})
       options.merge!({
         :proxy => @options[:proxy],
-        :ssl => {:verify => false},
-        :url => "https://www.instapaper.com/api/1/"
+        :ssl => { :verify => @options.fetch(:verify, true) },
+        :url => "https://www.instapaper.com/api/1.1/"
       })
 
       oauth_params = {
@@ -65,13 +65,16 @@ module InstapaperFull
         r.body = params unless params.empty?
       end
 
-      if result.headers['content-type'] == 'application/json'
+      begin
         JSON.parse(result.body).tap do |d|
-          if error = d.find { |e| e['type'] == 'error' }
+          # Errors are always returned as an array with a single element.
+          # bookmarks/list is the only method which returns a Hash, not an
+          # Array.
+          if d.kind_of?(Array) && error = d.find { |e| e['type'] == 'error' }
             raise InstapaperFull::API::Error.new(error['error_code'], error['message'])
           end
         end
-      else
+      rescue JSON::ParserError
         raise InstapaperFull::API::Error.new(-1, result.body) if result.status != 200
         result.body
       end
