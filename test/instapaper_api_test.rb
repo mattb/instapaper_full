@@ -75,7 +75,9 @@ class InstapaperAPITest < Test::Unit::TestCase
   def test_successful_bookmarks_list
     stub_successful_bookmarks_list
     list = authenticated_client.bookmarks_list
-    assert_equal 27, list.length # 25 + 1 user element + 1 meta element
+    assert list.has_key?('user')
+    assert list.has_key?('bookmarks')
+    assert list.has_key?('highlights')
   end
 
   def test_failed_bookmarks_add
