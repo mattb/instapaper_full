@@ -14,7 +14,7 @@ module InstapaperFull
       options.merge!({
         :proxy => @options[:proxy],
         :ssl => {:verify => false},
-        :url => "https://www.instapaper.com/api/1/"
+        :url => "https://www.instapaper.com/api/1.1/"
       })
 
       oauth_params = {
