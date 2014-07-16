@@ -13,7 +13,6 @@ module InstapaperFull
     def connection(options = {})
       options.merge!({
         :proxy => @options[:proxy],
-        :ssl => {:verify => false},
         :url => "https://www.instapaper.com/api/1.1/"
       })
 
